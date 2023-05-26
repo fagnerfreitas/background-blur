@@ -2,6 +2,7 @@ import './globals.scss'
 import styles from './styles.module.scss'
 
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={styles.header}>
-          <strong>Simples background Blur - By Legião Digital</strong>
+          <strong>Simples background Blur - <Link href="https://legiaodigital.com.br/"><span>By Legião Digital</span></Link></strong>
         </div>
         <div className={styles.circle}></div>
         <div className={styles.circle2}></div>

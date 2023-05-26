@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/button";
+import Link from "next/link";
 import styles from "./styles.module.scss";
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
           <h1 className={styles.title}>Crie seu Espaço Online com Profissionalismo</h1>
           <p>Somos uma agência especializada na construção de sites profissionais. Com experiência e habilidades, estamos comprometidos em criar espaços online de alta qualidade que representem a identidade e os objetivos de nossos clientes.</p>
           <div className={styles.actions}>
+          <Link href="https://legiaodigital.com.br/">
             <Button text="Quero meu site" />
+          </Link>
           </div>
         </div>
         <div className={styles.right}>
