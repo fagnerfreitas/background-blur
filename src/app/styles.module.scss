@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    height: 56px;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(100px);
+    z-index: 9;
+    position: fixed;
+}
+
+.circle{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgb(148, 46, 109) 0%, rgb(9, 175, 161) 100%);
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    margin-right: 1rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle2{
+    background: rgb(109, 111, 121);
+    background: radial-gradient(circle, rgb(146, 148, 46) 0%, rgb(5, 141, 73) 100%);
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    right: 1rem;
+    top: 5rem;
+    position: absolute;
+    border-radius: 50%;
+}

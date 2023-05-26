@@ -1,4 +1,6 @@
-import './globals.css'
+import './globals.scss'
+import styles from './styles.module.scss'
+
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,7 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <div className={styles.header}>
+          <strong>Simples background Blur - By Legião Digital</strong>
+        </div>
+        <div className={styles.circle}></div>
+        <div className={styles.circle2}></div>
+        {children}
+      </body>
     </html>
   )
 }
